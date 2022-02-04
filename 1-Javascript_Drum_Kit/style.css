@@ -1,0 +1,49 @@
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: url(./gabriel-barletta--lWcaUVJ39Y-unsplash.jpg) no-repeat center
+    center fixed;
+  color: white;
+  font-weight: 900;
+  font-family: "Helvetica Neue", "Open Sans", "Sans Serif";
+}
+audio {
+  display: none;
+}
+.btn {
+  padding: 1rem;
+  background-color: rgba(54, 54, 54, 0.5);
+  border: 1px solid black;
+  border-style: inset;
+  max-width: 200px;
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 1px 10px black;
+  font-size: 1.5rem;
+  user-select: none;
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.03s;
+}
+.active {
+  border: 5px solid yellow;
+  background-color: rgba(221, 221, 221, 0.575);
+}
+
+.container {
+  width: 90vw;
+  padding: 1rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black,
+    -1px -1px 0px black;
+}
