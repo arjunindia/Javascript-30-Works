@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Tricks!</title>
+  </head>
+  <body>
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+    <script>
+      const dogs = [
+        { name: "Snickers", age: 2 },
+        { name: "hugo", age: 8 },
+      ];
+
+      function makeGreen() {
+        const p = document.querySelector("p");
+        p.style.color = "#BADA55";
+        p.style.fontSize = "50px";
+      }
+
+      // Regular
+      console.log("makeGreen");
+      // Interpolated
+      console.log("makeGreen %s", "bruh");
+      // Styled
+      console.log("%c makeGreen ", `font-size:25px; background:red;`);
+      // warning!
+      console.warn("bruh moment %s", "#1");
+      // Error :|
+      console.error("bruh moment %s", "#2 (Serious)");
+
+      // Info
+      console.info("wow this is a fun fact");
+      // Testing
+      console.assert(1 == 2, "Bruh you stoopid");
+      // clearing
+      //   console.clear()
+      // Viewing DOM Elements
+      console.dir(document.querySelector("p"));
+      // Grouping together
+      console.group("Groupers");
+      console.log("Grouper %s", 1);
+      console.log("Grouper %s", 2);
+      console.log("Grouper %s", 3);
+      console.groupEnd("Groupers");
+
+      // counting
+      console.count("Wes");
+      console.count("steve");
+      console.count("Wes");
+      console.count("Wes");
+      console.count("steve");
+      console.count("steve");
+      console.count("Wes");
+
+      // timing
+      console.time("Timer");
+      setTimeout(() => {
+        console.timeEnd("Timer");
+      }, 2000);
+
+      console.table({ a: 1, b: 2, c: 3 });
+    </script>
+  </body>
+</html>
